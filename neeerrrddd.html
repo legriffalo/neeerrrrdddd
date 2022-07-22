@@ -62,4 +62,10 @@ document.getElementById('pressme').addEventListener('touchend',function(){
     i+=1;
     sound = sounds[i%sounds.length];
 });
+const noContext = document.getElementById('pressme');
+
+noContext.addEventListener('contextmenu', e => {
+  e.preventDefault();
+});
+
  </script>
